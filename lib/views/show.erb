@@ -7,7 +7,7 @@
     <p>Voici la page du potin numéro <%= params['id'].to_i + 1 %></p>
     <p>Son auteur est <%= gossip_n.author %></p>
     <p>Contenu du potin : <%= gossip_n.content %></p>
-    <p><a href="/gossips/:id/edit/">Editer ce potin</a></p>
+    <p><a href="/gossips/<%= id %>/edit/">Editer ce potin</a></p>
     <p><a href="/">Revenir à l'accueil</a></p>
   </body>
 </html>

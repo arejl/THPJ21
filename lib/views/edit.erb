@@ -5,7 +5,7 @@
   <body>
     <h1>Page potin - Modifier</h1>
     <p>Mets à jour le potin numéro <%= params['id'].to_i + 1 %></p>
-    <form action='/gossips/:id/edit/' method='POST'>
+    <form action='/gossips/<%= id %>/edit/' method='POST'>
       Saisis ici ton nom :  <input type='text' name='gossip_new_author'/><br/>
       Modifie le potin : <input type='text' name='gossip_new_content'/><br/>
       <input type='submit'/>
